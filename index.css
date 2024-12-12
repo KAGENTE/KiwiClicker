@@ -1,0 +1,202 @@
+/* Estilo global */
+body {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    text-align: center;
+    background-color: hsl(224, 23%, 37%);
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    user-select: none;
+}
+
+/* Container principal */
+#geral {
+    max-width: 800px; /* Limita a largura do layout */
+    margin: 0px auto; /* Centraliza o conteúdo na página */
+    padding: 20px;
+}
+
+/* Título */
+#tittle {
+    text-shadow: 2px 2px black;
+    font-size: 3rem;
+    color: hsl(93, 63%, 41%);
+    border: 10px outset hsla(225, 33%, 52%, 0.681);
+    padding: 15px;
+    background-color: hsl(225, 32%, 34%);
+    text-align: center;
+}
+
+#market{
+    grid-column: 1;
+    align-items: start;
+    padding: 10px;
+    backdrop-filter: blur(100px);
+    background-color: rgba(79, 134, 59, 0.323);
+    display: grid;
+    margin: 20px auto;
+    width: auto;
+    column-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+
+
+
+}
+.itemDesc{
+    font-family: Arial;
+    font-size: 1.1em;
+}
+#left{
+    grid-column: 3;
+    padding: 20px;
+    backdrop-filter: blur(100px);
+    background-color: rgba(79, 134, 59, 0.323);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    width: 500px;
+
+}
+#owned{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: rgba(255, 255, 0, 0.697);
+}
+    
+.itemName{
+    font-family: 'Times New Roman';
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(238, 156, 156);
+
+}
+.itemButtons{
+    font-size: 2em;
+    background-color: greenyellow;
+    border-color: rgba(115, 179, 19, 0.67);
+    width: 60px;
+    height: 50px;
+}
+.itemButtons:hover{
+    background-color: rgb(119, 178, 31);
+}
+.itemButtons:active{
+    background-color: rgb(153, 255, 0);
+}
+
+.marketItens{
+    grid-column: auto;
+    grid-row: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: 5px;
+    background-color: rgba(255, 255, 255, 0.228);
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0px;
+}
+#silo{
+    grid-column: span 2;
+}
+/* Contêiner com Eggplant e Vendas */
+#geral{
+    grid-column: 2;
+    width: auto;
+    height: auto;
+}
+#container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+}
+
+/* Botão Eggplant */
+#kiwi{
+    font-size: 13em;
+    background-color: transparent;
+    cursor: pointer;
+    border : none;
+    transition: font-size 0.2s ease;
+    height: 350px;
+    width: 350px;
+}
+
+#kiwi:hover {
+    font-size: 11rem;
+}
+
+#kiwi:active {
+    font-size: 14rem;
+}
+
+/* Seção de Vendas */
+#sales {
+    text-align: left;
+    align-items: center;
+
+}
+#salesCall{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+
+}
+#sell{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    transition: font-size 0.05s linear;
+    
+}
+#sell:hover{
+    font-size: 20px;
+}
+#sell:active{
+    font-size: 10px;
+}
+.raising {
+    display: block;
+    background-color: hsl(103, 69%, 37%);
+    border: 5px solid hsla(88, 71%, 32%, 0.681);
+    padding: 10px;
+    border-radius: 5px;
+}
+.decaing {
+    display: block;
+    background-color: hsl(0, 79%, 46%);
+    border: 5px solid hsl(4, 85%, 32%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Quantidade */
+#quantity {
+    text-shadow: 1px 1px black;
+    font-size: 1.5rem;
+    color: hsl(81, 100%, 52%);
+    border: 10px outset hsla(225, 33%, 52%, 0.681);
+    padding: 15px;
+    background-color: hsl(225, 32%, 34%);
+}
+#money{
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.385);
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 0%);
+    border: 10px outset hsla(106, 65%, 28%, 0.681);
+    padding: 15px;
+    background-color: hsl(124, 77%, 32%);
+}
